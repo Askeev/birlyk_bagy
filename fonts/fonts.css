@@ -1,0 +1,20 @@
+@font-face {
+    font-family: GoogleSansbd;
+    src: url('./GoogleSans-Bold.ttf') ;
+}
+
+@font-face {
+    font-family: GoogleSansmd;
+    src: url('./GoogleSans-Medium.ttf') ;
+}
+
+@font-face {
+    font-family: GoogleSansrg;
+    src: url('./GoogleSans-Regular.ttf') ;
+}
+
+body{font-family:'GoogleSansrg'; margin: 40px; background: #262022;}
+.font_s{
+    font-size: 104px;
+    line-height: 104px;
+}
