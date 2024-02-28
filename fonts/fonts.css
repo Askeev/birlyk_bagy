@@ -13,8 +13,10 @@
     src: url('./GoogleSans-Regular.ttf') ;
 }
 
-body{font-family:'GoogleSansrg'; margin: 40px; background: #262022;}
+body{font-family:'GoogleSansrg'; margin: 40px; background: #262022; color: #F6F5EE}
 .font_s{
     font-size: 104px;
     line-height: 104px;
 }
+.bold{font-family: GoogleSansbd}
+.text-white2{color: #F6F5EE}

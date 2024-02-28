@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input{
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: #3D3636;
+}
+h1{
+    color: #F6F5EE;
+    font-size: 80px;
+    font-style: normal;
+    line-height: 80px; /* 100% */
+    letter-spacing: -0.8px;
+}
+.greenBg{
+    background: #56AC7E;
+}

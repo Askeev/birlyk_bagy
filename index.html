@@ -4,25 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link href="./input.css" rel="stylesheet">
-    <link href="./@media.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <title>Byrlik</title>
 </head>
 <body class="flex flex-col">
-    <div class="grid grid-cols-2 relative">
-            <img class="absolute" src="./imgs/head 1.png" alt="">
-        <div class="flex flex-col z-10 text-white items-center justify-center">
-            <p class="font_s">Birlik</p>
-            <p class="font_s">Bagy</p>
-            <p class="text-sm uppercase">Уникальный арт-проект в Алматы</p>
+    <div class="grid grid-cols-2 gap-6">
+        <div class="relative">
+            <img class="w-full" src="./imgs/head 1.png" alt="">
+            <div class="absolute w-full bottom-10 flex flex-col z-10 text-white items-center justify-center">
+                <p class="font_s">Birlik</p>
+                <p class="font_s">Bagy</p>
+                <p class="text-sm uppercase">Уникальный арт-проект в Алматы</p>
+            </div>
         </div>
-        <div class="flex flex-col">
-            <img src="./imgs/icon 1.png" alt="">
+        <div class="flex flex-col bg-brown1 rounded-[24px] px-12 pt-6 pb-12 justify-between">
+            <div class="flex gap-7 items-center">
+                <img src="./imgs/logo.png">
+                <div class="flex gap-8 items-center text-white2 text-lg">
+                    <a>О проекте</a>
+                    <a>Идея</a>
+                    <a>Участие</a>
+                    <a>Контакты</a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 items-start">
+                <p class="text-white2 text-xl bg-brown3 px-6 py-5 rounded-[24px] w-full"> <span class="bold">Birlik Bagy</span> – это уникальный арт-проект культурного значения расположенный в парке Алматы.</p>
+                <p class="text-white2 text-xl bg-brown3 px-6 py-5 rounded-[24px] w-11/12">Объект – это инсталяция центрального <br>Древа, собранного из более чем <br> <span class="text-6xl bold">1 000 000 ложек</span></p>
+                <p class="text-white2 text-lg bg-brown2 px-6 py-5 rounded-[24px] w-10/12"><span class="opacity-60">Вокруг дерева также будут построены различные животные из ложек, каждое животное будет нести свой уникальный смысл.</span></p>
+                <p class="text-white2 text-lg bg-brown2 px-6 py-5 rounded-[24px] w-9/12"><span class="opacity-60">Дата завершения проекта: август 2024 года</span></p>
+                <div class="w-full flex gap-2">
+                    <input class="w-1/2 text-white2 text-xl" type="text" name="" id="" placeholder="Номер телефона">
+                    <button class="flex justify-center items-center bg-brown4 rounded-[16px] w-1/2 text-white2 text-xl">Принять участие</button>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="grid grid-cols-9 mt-8 rounded-[24px] grid-rows-[374px_344px] gap-6">
+        <div class="bg-brown1 col-span-5 py-10 px-12 rounded-[24px] flex flex-col gap-6">
+            <p class="opacity-50">Локация</p>
+            <h1 class="bold ">Уникальная <br>прогулочная <br>зона</h1>
+        </div>
+        <img class="col-span-4 row-span-2 h-full w-full" src="./imgs/Rectangle9.png">
+        <p class="bg-brown3 col-span-3 flex justify-center items-center text-xl p-12 rounded-[24px]">Проект станет современной достопримечательностью города где будут проводить время и любоваться сказочным видом жители и гости Алматы.</p>
+        <div class="flex flex-col justify-between items-center p-6 col-span-2 rounded-[24px] greenBg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="101" viewBox="0 0 100 101" fill="none">
+                <g clip-path="url(#clip0_1_48)">
+                    <path d="M37.2398 16.1898C37.2398 14.5725 35.9275 13.2602 34.3102 13.2602H15.4824C13.8641 13.2602 12.5527 14.5725 12.5527 16.1898V19.7451H37.2398V16.1898ZM53.8477 23.958L62.5344 29.3834L62.8891 39.6182C62.9155 40.3771 63.2356 41.0961 63.7818 41.6237C64.3281 42.1513 65.0578 42.4462 65.8172 42.4463C66.2895 42.4463 66.7625 42.3328 67.1928 42.1031L76.2352 37.2936L85.2762 42.1031C85.715 42.3366 86.2061 42.4546 86.7031 42.4461C87.2001 42.4376 87.6868 42.3027 88.1174 42.0543C88.5479 41.8058 88.908 41.4517 89.1639 41.0255C89.4197 40.5993 89.5628 40.115 89.5797 39.6182L89.9352 29.3834L98.6221 23.958C99.0437 23.6947 99.3913 23.3285 99.6323 22.8938C99.8734 22.4591 99.9998 21.9702 99.9998 21.4731C99.9998 20.9761 99.8734 20.4872 99.6323 20.0525C99.3913 19.6178 99.0437 19.2516 98.6221 18.9883L89.9355 13.5639L89.5801 3.32812C89.563 2.83145 89.4197 2.34731 89.1638 1.92129C88.9079 1.49527 88.5478 1.14139 88.1174 0.892969C87.6721 0.635382 87.1668 0.499831 86.6523 0.5C86.1793 0.5 85.707 0.614453 85.276 0.84336L76.2352 5.65371L67.1928 0.843164C66.754 0.609761 66.263 0.491866 65.7661 0.500579C65.2692 0.509292 64.7827 0.644326 64.3523 0.892969C63.9219 1.14137 63.5617 1.49524 63.3057 1.92125C63.0497 2.34727 62.9063 2.83141 62.8891 3.32812L62.5344 13.5639L53.8475 18.9883C53.426 19.2517 53.0784 19.618 52.8374 20.0527C52.5964 20.4874 52.4699 20.9762 52.4697 21.4732C52.4699 21.9702 52.5964 22.4591 52.8374 22.8937C53.0784 23.3284 53.426 23.6946 53.8475 23.958H53.8477ZM50.0008 44.81C38.2111 44.81 28.6193 54.401 28.6193 66.1898C28.6193 77.9787 38.2111 87.5705 50.0008 87.5705C61.7889 87.5705 71.3807 77.9795 71.3807 66.1898C71.3807 54.4008 61.7889 44.81 50.0008 44.81ZM50 81.6723C41.4635 81.6723 34.5184 74.7264 34.5184 66.1898C34.5184 57.6533 41.4635 50.7082 50 50.7082C58.5371 50.7082 65.4824 57.6533 65.4824 66.1898C65.4824 74.7264 58.5371 81.6723 50 81.6723Z" fill="#F6F5EE"/>
+                    <path d="M50 56.5675C44.6945 56.5675 40.3777 60.8843 40.3777 66.1898C40.3777 71.496 44.6945 75.8128 50 75.8128C55.3055 75.8128 59.623 71.496 59.623 66.1898C59.623 60.8843 55.3055 56.5675 50 56.5675ZM17.0508 40.8777C16.0705 40.8777 15.2734 41.675 15.2734 42.6546C15.2734 43.6351 16.0705 44.4324 17.0508 44.4324C18.0311 44.4324 18.8285 43.6351 18.8285 42.6546C18.8277 41.675 18.0303 40.8777 17.0508 40.8777Z" fill="#F6F5EE"/>
+                    <path d="M95.6832 32.7014L95.4361 39.8219C95.3301 42.8721 93.6891 45.6036 91.0469 47.1286C89.7104 47.8991 88.195 48.3051 86.6523 48.3059C85.2128 48.3047 83.7954 47.951 82.524 47.2758L76.2352 43.9303L69.9447 47.276C69.8646 47.3186 69.7822 47.3567 69.7006 47.3963C74.3691 52.2883 77.24 58.91 77.24 66.1899C77.24 81.2098 65.0199 93.4299 50 93.4299C34.9801 93.4299 22.76 81.2098 22.76 66.1899C22.76 51.17 34.9801 38.9506 50 38.9506C52.433 38.9506 54.7912 39.2727 57.0365 39.8739C57.0357 39.8563 57.0336 39.8387 57.0336 39.8211L56.7863 32.7014L50.7447 28.9288C49.4345 28.113 48.3626 26.9661 47.6373 25.6038H10.7748C4.8332 25.6045 0 30.4377 0 36.379V89.7252C0 95.6668 4.8332 100.5 10.775 100.5H89.2242C95.166 100.5 100 95.6668 100 89.725V36.3788C100.002 34.4632 99.489 32.5823 98.516 30.9323L95.6832 32.7014ZM17.051 50.2918C12.8402 50.2918 9.41387 46.8661 9.41387 42.6547C9.41387 38.444 12.8402 35.0184 17.051 35.0184C21.2615 35.0184 24.6879 38.4442 24.6879 42.6547C24.6871 46.8663 21.2615 50.2918 17.051 50.2918Z" fill="#F6F5EE"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1_48">
+                        <rect width="100" height="100" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <p class="text-center text-xl">Это станет локацией для красивых фотографий и магнитом для туристов.</p>
+        </div>
+    </div>
+    <div class="grid grid-cols-7 mt-8 rounded-[24px] grid-rows-[214px] gap-6">
+        <img class="col-span-3 row-span-2 h-full w-full" src="./imgs/Rectangle9.png">
+        <div class="bg-brown1 col-span-4 py-10 px-12 rounded-[24px] flex flex-col gap-6">
+            <p class="opacity-50">О проекте</p>
+            <h1 class="bold ">Символизм</h1>
+        </div>
 
+        <div class="bg-brown3 col-span-2 flex flex-col gap-8 text-left justify-start items-start text-xl p-12 rounded-[24px]"><h2 class="text-3xl bold">Ложки</h2><p>Ложки символизируют объединение родных и близких людей, когда мы собираемся за одним столом. Металлическая основа сохраняется на многие десятилетия.</p></div>
+        <div class="flex flex-col justify-start gap-8 items-left p-12 col-span-2 rounded-[24px] bg-brown5">
+            <h2 class="text-3xl bold">Дерево</h2><p>Дерево - это жизнь, оно притягивает к себе все живое (вокруг дерева будут различные животные).</p>
+        </div>
+    </div>
 
 
 </body>
